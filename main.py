@@ -70,6 +70,13 @@ matriz_distancias = [[0,      2.079, 1.578, 6.000, 1.652,  # Distancias Aracaju
                       2.684, 1.444, 2.568, 2.979, 1.014,
                       2.911, 1.892],
 
+                     [2.595, 3.193, 1.004, 4.821, 1.366,  # Distancias Curitiba
+                      991,   1.679, 0,     300,   3.541,
+                      1.186, 3.188, 0,     2.871, 4.036,
+                      3.365, 2.036, 711,   3.135, 3.078,
+                      3.669, 852,   2.385, 3.230, 408,
+                      3.143, 1.300],
+
                      [2.775, 2.941, 1.594, 3.142, 1.133,  # Distancias Cuiaba
                       694,   0,     1.679, 1.986, 3.406,
                       934,   3.366, 0,     3.049, 2.357,
@@ -324,3 +331,8 @@ def algoritmo_semi_guloso():
             solucao.append(cidade_sorteada)
 
     print("Solução final :", solucao, " Distancia = ", funcao_objetivo(solucao))
+
+execucao = 30
+while execucao > 0:
+    algoritmo_aleatorio()
+    execucao -= 1
